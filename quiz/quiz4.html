@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock/Crypto Quiz Week [Number]</title>
+
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="icon" href="../res/quiz.png">
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js" defer></script>
+
+    <script src="../js/firebase.js" defer></script>
+    <script src="../js/quiz.js" defer></script>
+    <script src="../js/functions.js" defer></script>
+</head>
+
+<body>
+
+    <div class="quizbody">
+        <div class="quizheader">
+            <h1> Crypto Quiz Week [2]</h1>
+
+        </div>
+        <div class="quizcontent">
+            <div class="quizquestion">
+                <h4>Question 1</h4>
+                <h3>The creator of Bitcoin is</h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question1">
+                                <option value="0">select option</option>
+                                <option value="1">Bill Gates</option>
+                                <option value="2">Satoshi Nakamoto</option>
+                                <option value="3">Steve Jobs</option>
+                                <option value="4">Mark Zuckerberg</option>
+                            </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 2</h4>
+                <h3>Bitcoins are created as a reward for a process known as?</h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question2">
+                                <option value="0">select option</option>
+                                <option value="1">mining</option>
+                                <option value="2">wallet</option>
+                                <option value="3">bubble</option>
+                                <option value="4">ledger</option>
+                            </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 3</h4>
+                <h3>What does the block in the blockchain consist of?The first game built using Ethereum technology is called?</h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question3">
+                        <option value="0">select option</option>
+                        <option value="1">Cryptomon</option>
+                        <option value="2">Cryptokitties</option>
+                        <option value="3">Cryptobox</option>
+                        <option value="4">Ethergame</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 4</h4>
+                <h3>choose a decentralized wallet from below</h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question4">
+                        <option value="0">select option</option>
+                        <option value="1">binance</option>
+                        <option value="2">kucoin</option>
+                        <option value="3">Metamask</option>
+                        <option value="4">none of the above</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 5</h4>
+                <h3>Find the odd one out</h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question5">
+                        <option value="0">select option</option>
+                        <option value="1">Compound finance</option>
+                        <option value="2">Binance</option>
+                        <option value="3">Aave</option>
+                        <option value="4">Uniswap</option>
+                    </select>
+                </div>
+            </div>
+            <!--Complete the remaining Like this-->
+        </div>
+        <div id="submitdiv">
+            <button id="submitbutton" onclick="submitquiz('c2')">Submit</button>
+            <!--change s1 to s/c [Stock/Crypto - week number]-->
+            <div id="scorecard"></div>
+        </div>
+
+
+</body>
+
+</html>

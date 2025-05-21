@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock/Crypto Quiz Week [Number]</title>
+
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="icon" href="../res/quiz.png">
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js" defer></script>
+
+    <script src="../js/firebase.js" defer></script>
+    <script src="../js/quiz.js" defer></script>
+    <script src="../js/functions.js" defer></script>
+</head>
+
+<body>
+
+    <div class="quizbody">
+        <div class="quizheader">
+            <h1> STOCK MARKET Week 1</h1>
+
+        </div class="quizquestion">
+        <div class="quizcontent">
+            <div>
+                <h4>Question 1</h4>
+                <h3>Which stock exchange is more popular among traders?
+
+                </h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question1">
+                        <option value="0">select option</option>
+                        <option value="1">NSE</option>
+                        <option value="2">BSE</option>
+                        <option value="3">None of the above</option>
+                        <option value="4">Both A and B</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 2</h4>
+                <h3>Who is typically the biggest player moving the Indian stock market on a day to day basis?</h3>
+                <div class="quizanswer">
+                    <select qtns id="question2">
+                        <option value="0">select option</option>
+                        <option value="1">Foreign Institutional Investors (FIIs)</option>
+                        <option value="2">Retail Traders</option>
+                        <option value="3">Domestic Institutional Investors (DIIs)</option>
+                        <option value="4">Brokers</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 3</h4>
+                <h3>What is a defensive stock?</h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question3">
+                        <option value="0">select option</option>
+                        <option value="1">A stock belonging to a defence company</option>
+                        <option value="2">A stock that belongs to infrastructure industry</option>
+                        <option value="3">A stock that holds its value even when the market is falling</option>
+                        <option value="4">A junk stock that we should stay away from</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 4</h4>
+                <h3>Which of these is not a tradable index?
+                </h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question4">
+                        <option value="0">select option</option>
+                        <option value="1">NIFTY</option>
+                        <option value="2">NIFTY IT</option>
+                        <option value="3">NIFTY BANK</option>
+                        <option value="4">None of the above</option>
+                    </select>
+                </div>
+            </div>
+            <div class="quizquestion">
+                <h4>Question 5</h4>
+                <h3>Who regulates the Indian stock market?
+                </h3>
+                <div class="quizanswer">
+                    <select class="qtns" id="question5">
+                        <option value="0">select option</option>
+                        <option value="1">IRDA</option>
+                        <option value="2">SEBI</option>
+                        <option value="3">RBI</option>
+                        <option value="4">DOT</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!--Complete the remaining Like this-->
+    </div>
+    <div id="submitdiv">
+        <button id="submitbutton" onclick="submitquiz('s1')">Submit</button>
+        <!--change s1 to s/c [Stock/Crypto - week number]-->
+        <div id="scorecard"></div>
+    </div>
+
+
+</body>
+
+</html>
